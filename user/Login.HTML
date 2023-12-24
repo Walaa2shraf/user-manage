@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link rel="stylesheet"
+    href="Login.CSS">
+  
+</head>
+
+<body>
+
+    
+    
+
+    <div class="learn">
+        <h2>Learn to code by watching others</h2>
+        <p class="para1">See how experienced developers solve problems in real-time.
+            Watching scripted tutorials is great, but understanding how 
+            developers think is invaluable.
+        </p>
+    </div>
+    
+
+    
+<!-- <div id="right">
+    <div class="premium">
+        <p ><span class="pre"> Try it free 7 days </span>then $20/mo. thereafter</p>
+    </div> -->
+
+<br>
+
+    <div class="container">
+        <form>
+            <input type="text" id="first" required placeholder="First Name">
+            <input type="text" id="second" required placeholder="Last Name">
+            <input type="email" id="email" required placeholder="Email Address">
+            <input type="password" id="password" required placeholder="Password">
+            <button class="sub" type="button" onclick="login()">CLAIM YOUR FREE TRIAL</button>
+        </form>
+        <p class="terms">By clicking the button, you're agreeing to our <span class="b">Terms and Services</span></p>
+    </div>
+
+
+</div>
+
+<script>
+    document.addEventListener("icon-error.svg", function () {
+        const imageURLInput = document.getElementById("icon-error.svg");
+        const imagePreview = document.getElementById("icon-error.svg");
+
+        imageURLInput.addEventListener("sub", function () {
+            
+            const imageURL = imageURLInput.value.trim();
+
+            if (imageURL === "icon-error.svg") {
+               
+                imagePreview.src = "icon-error.svg"; 
+            } else {
+                
+                imagePreview.src = imageURL;
+            }
+        });
+
+        imageURLInput.value = "icon-error.svg";
+        imageURLInput.dispatchEvent(new Event("sub"));
+    });
+</script>
+
+<script>
+    // Function to generate a fake user
+   
+    function login() {
+        const fakeUser = {
+            firstName: document.getElementById('first').value,
+            lastName: document.getElementById('second').value,
+            email:document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            services:[],
+        };
+
+        // Store the fake user data in localStorage
+        localStorage.setItem("fakeUser", JSON.stringify(fakeUser));
+        window.location.pathname="C:/Users/ASWAN%20LAP%20STORE/Desktop/mange%20Landing/blogr-landing-page-main/Learn_Code.HTML"
+        // Optional: You can also display the user details on the page
+      
+    }
+
+    // Function to display user details on the page
+    
+
+    // Check if the fake user data is already stored
+    const storedUser = localStorage.getItem("fakeUser");
+
+    if (storedUser) {
+        // If data exists, parse and display user details
+        const parsedUser = JSON.parse(storedUser);
+        
+    } else {
+        // If data doesn't exist, generate and store a fake user
+        login();
+    }
+</script>
+
+<div id="userDetails">
+    <!-- User details will be displayed here -->
+</div>
+
+</body>
+
+</html>
