@@ -1,0 +1,233 @@
+*{
+   padding: 0px;
+   margin: 0px; 
+   /* outline: 1px solid red; */
+}
+/* ====================== navbar =================================== */
+nav .links ul li a {
+   color: white;
+}
+nav .links ul li a:hover {
+   color: hsl(227, 12%, 61%);
+}
+nav li a:hover {
+   color: hsl(227, 12%, 61%);
+}
+.links li:hover {
+   border-bottom: 3px solid hsl(12, 88%, 59%);
+}
+
+/* ================================================================================== */
+h1 {
+   text-align: center;
+}
+.hh{
+   color:  hsl(12, 88%, 59%);
+   margin: 3%;
+}
+.welcome {
+   box-shadow:0px 3px 16px rgba(0, 0, 0, 0.12);
+   border-radius: 25px;
+   margin: auto;
+   margin-bottom:5% ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   /* width: 85%; */
+}
+
+.orders {
+   color:  hsl(12, 88%, 59%);
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   text-align: left;
+}
+.tasks {
+   box-shadow:0px 3px 16px rgba(0, 0, 0, 0.12);
+   border-radius: 25px;
+   margin: auto;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   /* width: 85%; */
+}
+
+.col-6 img{
+   width: 20%;
+   border-radius: 50%;
+   /* margin-left: 10%; */
+   display: flex;
+} 
+.hello{
+   margin-left: 10%;
+}
+.data{
+   padding-top :40%;
+   text-align: left;
+}   
+/* ================================= footer ================================== */
+p {
+   color:hsl(227, 12%, 61%);
+}
+footer {
+   background-color: hsl(233, 12%, 13%);
+   display: flex;
+   gap: 7%;
+   padding: 4%;
+}
+footer img {
+   display: flex;
+   align-self: self-start;
+   z-index: 2;
+}
+footer ul {
+   list-style-type: none;
+}
+.location {
+   display: flex;
+   flex-direction: column;
+   width: 40% ;
+   flex-grow: 1;
+}
+.media {
+   width: 70%;
+   display: flex;
+   gap: 6%;
+   margin-top:15% ;
+}
+.media li {
+   gap: 20%;
+
+}
+.media li :hover {
+   width: 140%;
+}
+.about li {
+   display: flex;  
+   gap: 2%;  
+   padding: 2%;
+}
+.nav-foot {
+   width: 33%;
+   flex-grow: 1;
+}
+
+.nav-foot a {
+   text-decoration: none;
+   color: hsl(0, 0%, 98%);
+}
+.nav-foot a:hover {
+   color: hsl(12, 88%, 59%);
+}
+.nav-foot li {
+   padding: 2%;
+}
+
+.social {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 33%;
+   flex-grow: 1;
+}
+.social p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+
+/* =============================  media quiery  =========================== */
+@media only screen and (max-width:991px){
+   .div1 {
+      display: flex;
+      flex-direction: column;
+      padding:2px 20px 2px 20px;
+   }
+   
+   .div2 {
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      padding:5px 30px 5px 30px;
+   }
+   .image2 img{
+      margin: auto;
+      width: 80%;  
+   } 
+   .div3 {
+      display: flex;
+      flex-direction: column;
+      padding:2px 20px 2px 20px;
+   }
+   /* ================ footer ===================== */
+   footer {
+      background-color: hsl(233, 12%, 13%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7%;
+      padding: 4%;
+   }
+   footer img {
+      display: flex;
+      align-self: self-start;
+   }
+   footer ul {
+      list-style-type: none;
+   }
+   .location {
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      width:100% ;
+      flex-grow: 1;
+   }
+   .logo-foot {
+      display: inline-block;
+      margin: auto;
+      padding: 7%;
+   }
+   .social {
+      width: 75%;
+      align-items: center;
+   }
+   .media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15%;
+      margin: 7%;
+   }
+   
+   .about li {
+      display: flex;  
+      gap: 7%;  
+      padding: 4%;
+   }
+   .nav-foot {
+      margin: 10%;
+      flex-grow: 1;
+   }
+   .nav-foot a {
+      text-decoration: none;
+      color: hsl(0, 0%, 98%);
+   }
+   
+   .nav-foot li {
+      padding: 2%;
+   }
+   
+   .social p {
+      display: flex;
+      text-align: center;
+      padding: 3%;
+      width: 100%;
+   }
+}
+
